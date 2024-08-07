@@ -1,0 +1,51 @@
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    font-family: arial;
+    background-color: gainsboro;
+    
+}
+
+h1{
+    font-size:30px;
+    color: rgb(143, 153, 194);
+}
+.content{
+    width:450px;
+    max-width:98%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    background-color:white;
+    padding: 2vh 2vw 2vh 2vw;
+
+}
+
+button{
+    width:70%;
+    padding: 1vh 1vh;
+    margin: 3vh 3vh;
+}
+
+#resultList{
+    display:none;
+    font-size:23px;
+}
+
+td{
+
+    height: 5vh;
+}
+
+form{
+    
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+ol{
+    line-height:150%;
+}

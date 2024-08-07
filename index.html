@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" href = "style.css">
+
+        <title>
+            secure password generator
+        </title>
+    </head>
+
+    <body>
+        <div class = "content"> <!--start content-->
+          <h1>Generate a secure password.</h1>
+
+          <button id="goButton">GO!</button>
+
+          <div id = "resultList">
+            <ol>
+            <li class = "result"></li>
+            <li class = "result"></li>
+            <li class = "result"></li>
+            <li class = "result"></li>
+            </ol>
+          
+          </div>
+          <table>
+          <tr>
+
+          <td>
+          <p>Length:</p>
+          </td>
+
+          <td>
+          <div id = "lengthDisplay">
+            10
+         </div>
+          <div>
+              <input type="range" id = "length" name = "length" min="6" max="20" value="10">
+          </div>
+        </td>
+
+        </tr>
+        
+        
+          
+          <tr>
+          <td>
+          <p> No. of Numbers </p>
+          </td>
+
+          <td>
+          <form>
+            <input type="radio" name="numbers" value="0"/>0
+            <input type="radio" name="numbers" value="1" />1
+            <input type="radio" name="numbers" value="2" checked = "checked" />2
+            <input type="radio" name="numbers" value="3" />3
+          </form>
+        </td>
+        </tr>
+
+          <tr>
+          <td>
+          <p> No. of Uppercase Chars </p>
+          </td>
+          <td>
+          <form>
+            <input type="radio" name="upper" value="0" checked = "checked"/>0
+            <input type="radio" name="upper" value="1" />1
+            <input type="radio" name="upper" value="2" />2
+            <input type="radio" name="upper" value="3" />3
+          </form>
+        </td>
+        </tr>
+
+        <tr>
+          <td>
+          <p> No. of Symbols </p>
+          </td>
+          <td>
+          <form>
+            <input type="radio" name="symbols" value="0" checked = "checked"/>0
+            <input type="radio" name="symbols" value="1" />1
+            <input type="radio" name="symbols" value="2" />2
+            <input type="radio" name="symbols" value="3" />3
+          </form>
+        </td>
+        </tr>
+        <!--end symbol category-->
+
+      
+
+      </table>
+
+         
+
+        </div> <!--end content-->
+        <script src="app.js"></script>
+    </body>
+
+</html>

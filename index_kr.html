@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel = "stylesheet" href = "style.css">
+
+        <title>
+            secure password generator
+        </title>
+    </head>
+
+    <body>
+        <div class = "content"> <!--start content-->
+          <h1>안전한 비밀번호 생성기</h1>
+
+          <button id="goButton">생성하기</button>
+
+          <div id = "resultList">
+            <ol>
+            <li class = "result"></li>
+            <li class = "result"></li>
+            <li class = "result"></li>
+            <li class = "result"></li>
+            </ol>
+          
+          </div>
+          <table>
+          <tr>
+
+          <td>
+          <p>길이:</p>
+          </td>
+
+          <td>
+          <div id = "lengthDisplay">
+            10
+         </div>
+          <div>
+              <input type="range" id = "length" name = "length" min="6" max="20" value="10">
+          </div>
+        </td>
+
+        </tr>
+        
+        
+          
+          <tr>
+          <td>
+          <p> 숫자 수 </p>
+          </td>
+
+          <td>
+          <form>
+            <input type="radio" name="numbers" value="0"/>0
+            <input type="radio" name="numbers" value="1" />1
+            <input type="radio" name="numbers" value="2" checked = "checked" />2
+            <input type="radio" name="numbers" value="3" />3
+          </form>
+        </td>
+        </tr>
+
+          <tr>
+          <td>
+          <p> 대문자 수 </p>
+          </td>
+          <td>
+          <form>
+            <input type="radio" name="upper" value="0" checked = "checked"/>0
+            <input type="radio" name="upper" value="1" />1
+            <input type="radio" name="upper" value="2" />2
+            <input type="radio" name="upper" value="3" />3
+          </form>
+        </td>
+        </tr>
+
+        <tr>
+          <td>
+          <p> 특수문자 수</p>
+          </td>
+          <td>
+          <form>
+            <input type="radio" name="symbols" value="0" checked = "checked"/>0
+            <input type="radio" name="symbols" value="1" />1
+            <input type="radio" name="symbols" value="2" />2
+            <input type="radio" name="symbols" value="3" />3
+          </form>
+        </td>
+        </tr>
+        <!--end symbol category-->
+
+      
+
+      </table>
+
+         
+
+        </div> <!--end content-->
+        <script src="app.js"></script>
+    </body>
+
+</html>
